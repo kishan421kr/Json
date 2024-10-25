@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cardsection{
+            display: flex;
+            overflow-x: scroll;
+            padding: 20px 60px 20px 60px;
+            background-color: rgb(255, 240, 184);
+        }
+        #cardsection::-webkit-scrollbar{
+            display: none;
+        }
+        #cards{
+            margin: 10px 40px 10px;
+            
+        }
+        #cards div{
+            background-color: white;
+        }
+        #cards img{
+            width: 200px;
+            height: 300px;
+        }
+        #cards div:hover{
+            color: red;
+            position: relative;
+            background-color: none;
+            bottom: 2px;
+            box-shadow: 5px 5px 25px rgb(104, 104, 104);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body onload="run()">
+    <div id="cardsection">
+        
+    </div>
+    <script src="carddata.js"></script>
+</body>
+</html>
